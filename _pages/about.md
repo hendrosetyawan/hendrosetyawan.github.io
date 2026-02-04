@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Master in Data Science</a> at Texas A&M University
+subtitle: <a href='#'> ML/AI Researcher </a> at Texas A&M Institute of Data Science
 
 profile:
   align: right
