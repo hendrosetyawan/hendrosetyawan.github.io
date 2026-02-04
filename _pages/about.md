@@ -7,7 +7,7 @@ subtitle: <a href='#'>Master in Data Science</a> at Texas A&M University
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>000 office number</p>
     <p>Texas A&M University</p>
