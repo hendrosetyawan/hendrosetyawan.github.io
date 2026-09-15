@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Full curriculum vitae. Download the one-page resume with the button above.",
+        },{id: "nav-resume",
+          title: "resume",
+          description: "Full history. Download the one-page resume with the button above.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/resume/";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
@@ -73,12 +73,12 @@ ninja.data = [{
               window.location.href = "/projects/1_breedscope/";
             },},{id: "projects-autoscopy",
           title: 'AutoScopy',
-          description: "Generative AI reconstructing 3D metal microstructures from sparse diffraction data. M.S. capstone, ongoing.",
+          description: "AI-enabled 3D microstructure reconstruction from sparse measurements, with calibrated uncertainty carried through to fatigue crack prediction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_autoscopy/";
-            },},{id: "projects-x-gridagent",
-          title: 'X-GridAgent',
-          description: "Distilling a multi-agent LLM system into a local 1B-parameter model for power-flow and contingency analysis.",
+            },},{id: "projects-x-gridagent-distillm",
+          title: 'X-GridAgent + DistiLLM',
+          description: "Distilling a multi-agent LLM system for power-grid analysis into a model small enough to run inside the utility.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_xgridagent/";
             },},{id: "teachings-data-science-fundamentals",
