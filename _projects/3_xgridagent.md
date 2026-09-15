@@ -2,7 +2,7 @@
 layout: page
 title: X-GridAgent + DistiLLM
 description: Distilling a multi-agent LLM system for power-grid analysis into a model small enough to run inside the utility.
-img: assets/img/projects/xgridagent_arch.jpg
+img: assets/img/projects/xgridagent_talk.jpg
 importance: 3
 category: machine learning
 ---
@@ -14,6 +14,15 @@ Texas A&M, January–May 2026. This project combines two published methods; both
 **X-GridAgent** — Wen & Chen, [arXiv:2512.20789](https://arxiv.org/abs/2512.20789). An LLM-powered agentic system that answers power-system questions posed in plain language, built as a three-layer hierarchy of planning, coordination, and action layers, with schema-adaptive hybrid RAG for retrieval over large structured grid datasets.
 
 **DistiLLM** — Ko, Kim, Chen & Yun (KAIST AI and Microsoft), ICML. A distillation recipe for autoregressive language models built on two ideas: *skew KLD*, which gives a smaller gradient norm and more stable optimisation than plain KL divergence, and an *adaptive off-policy* scheme with a replay buffer that fixes the sample inefficiency of student-generated output.
+
+<div class="row justify-content-sm-center mt-4">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/projects/xgridagent_arch.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  The teacher's three layers on the left, the distillation step in the middle, the model that ends up running inside the utility on the right.
+</div>
 
 ### What I did with them
 

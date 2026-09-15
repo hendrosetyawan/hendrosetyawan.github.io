@@ -2,7 +2,7 @@
 layout: page
 title: BreedScope
 description: A genomic-selection pipeline that ranks 15,968 untested maize lines under a cut plot budget. 3rd place, 2026 AgTech Hackathon.
-img: assets/img/projects/breedscope_dash.jpg
+img: assets/img/projects/breedscope_demeter.jpg
 importance: 1
 category: data engineering
 ---
@@ -34,6 +34,16 @@ The accuracy is modest by the nature of the problem rather than by accident — 
 The single largest accuracy gain — ρ from 0.132 to 0.167 — came from identifying **nine site-years that pooled separate trials incorrectly**. A data-quality fix. REML, optimal contribution selection, and intelligent site elimination each failed to beat it. The binding constraint was information per line, not the algorithm applied to it.
 
 ### The dashboard
+
+<div class="row justify-content-sm-center mt-3">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/projects/breedscope_dash.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  The recommendation panel: 15,968 candidates, 1,500 slots, and every figure scored against the 2008 outcome that actually happened.
+</div>
+
 
 An interactive D3.js decision tool on Firebase: testing-network and site-performance views, budget-planning sliders that recost plot cuts live, selection-rule testing, and a sortable table of all 157 candidate families under current versus unrestricted scenarios.
 
