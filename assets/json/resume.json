@@ -209,7 +209,7 @@
       "name": "BreedScope",
       "startDate": "2026-09-01",
       "endDate": "2026-09-01",
-      "description": "Genomic-selection pipeline ranking 15,968 untested maize lines across 1,072,276 field plots. +1.52 bu/ac realized gain, 1.42x hit rate vs random, 748 MB flat memory in 2m33s. 3rd place, 2026 AgTech Hackathon.",
+      "description": "Genomic-selection pipeline ranking 15,968 untested maize lines across 1,072,276 field plots. +1.37 bu/ac realised gain on the shipped list, 1.42x hit rate vs random, 748 MB flat memory in 2m33s. 3rd place, 2026 AgTech Hackathon.",
       "highlights": [
         "RR-BLUP over 2,911 SNP markers",
         "Forward-year validation",

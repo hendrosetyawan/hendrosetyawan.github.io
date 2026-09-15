@@ -2,6 +2,7 @@
 layout: page
 title: BreedScope
 description: A genomic-selection pipeline that ranks 15,968 untested maize lines under a cut plot budget. 3rd place, 2026 AgTech Hackathon.
+img: assets/img/projects/breedscope_dash.jpg
 importance: 1
 category: data engineering
 ---
@@ -26,7 +27,9 @@ Nine stages over **1,072,276 field plots**: ID reconciliation across four identi
 
 ### Results
 
-+1.52 bu/ac realized gain in the advancement set. A 1.42× hit rate against random selection. Hold-out correlation of 0.154–0.157, stable across years.
+**+1.37 bu/ac** realised gain on the list actually shipped, scored against the 2008 outcome that really happened. A **1.42× hit rate** against picking at random, with 94% of genetic variety retained at a cap of 25 lines per family. Hold-out correlation 0.154–0.157, stable across years.
+
+The accuracy is modest by the nature of the problem rather than by accident — these are untested lines from untested families, and 85.4% of the usable variation is all the markers can reach. A 1.42× edge applied across 15,968 candidates is what genetic gain looks like at this scale.
 
 The single largest accuracy gain — ρ from 0.132 to 0.167 — came from identifying **nine site-years that pooled separate trials incorrectly**. A data-quality fix. REML, optimal contribution selection, and intelligent site elimination each failed to beat it. The binding constraint was information per line, not the algorithm applied to it.
 
