@@ -85,17 +85,7 @@
       "area": "Data Science",
       "studyType": "M.S.",
       "startDate": "2025-08-01",
-      "endDate": "2026-12-31",
-      "courses": [
-        "Databases & Computational Tools for Big Data",
-        "Data Mining & Analysis",
-        "Statistical Foundations of Data Science",
-        "Machine Learning",
-        "Artificial Intelligence",
-        "Reinforcement Learning",
-        "Data Visualization",
-        "Parallel Computing"
-      ]
+      "endDate": "2026-12-31"
     },
     {
       "institution": "Institut Teknologi Bandung (ITB)",
