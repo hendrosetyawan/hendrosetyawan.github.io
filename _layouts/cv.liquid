@@ -242,9 +242,11 @@ layout: default
               {% endif %}
               {% if basics.url %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% if basics.url contains 'linkedin.com' %}LinkedIn{% elsif basics.url contains 'github.com' %}GitHub{% else %}Website{% endif %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">
-                    <a href="{{ basics.url }}" target="_blank">{{ basics.url }}</a>
+                    <a href="{{ basics.url }}" target="_blank">{{ basics.url | remove: 'https://' | remove: 'www.' }}</a>
                   </td>
                 </tr>
               {% endif %}
