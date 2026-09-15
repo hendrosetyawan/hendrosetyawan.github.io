@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started the M.S. Data Science capstone: **AutoScopy**, generative AI for 3D microstructure reconstruction from sparse diffraction data.
+Started the M.S. Data Science capstone: **AutoScopy**, AI-enabled 3D microstructure reconstruction from sparse measurements, with calibrated uncertainty carried through to fatigue crack prediction.

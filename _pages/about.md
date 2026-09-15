@@ -32,7 +32,7 @@ For fifteen years at **PLN**, Indonesia's national electric utility, the data *w
 
 Before that I spent nine years building the grid itself: 39 transmission, substation, and generation projects, including nodes of the Java–Bali 500 kV backbone and twelve gas-insulated substations threaded through dense urban Jakarta, where overhead lines were not an option.
 
-I am now completing an **M.S. in Data Science at Texas A&M**, graduating December 2026. Recent work includes [BreedScope](/projects/), a genomic-selection pipeline that ranked 15,968 untested maize lines across 1.07M field plots and took 3rd place at the 2026 AgTech Hackathon with Bayer; an on-policy distillation of a multi-agent LLM system for power-grid analysis; and a diffusion-model capstone reconstructing 3D metal microstructures from sparse diffraction data.
+I am now completing an **M.S. in Data Science at Texas A&M**, graduating December 2026. Recent work includes [BreedScope](/projects/), a genomic-selection pipeline that ranked 15,968 untested maize lines across 1.07M field plots and took 3rd place at the 2026 AgTech Hackathon with Bayer; an on-policy distillation of a multi-agent LLM system for power-grid analysis; and a capstone reconstructing 3D metal microstructures from sparse diffraction measurements with calibrated uncertainty, aimed at fatigue crack prediction.
 
 Most data candidates have the stack but not the domain. Most utility engineers have the domain but not the stack. I have both, at national scale.
 
