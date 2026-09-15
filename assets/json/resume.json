@@ -32,75 +32,49 @@
       "location": "Jakarta, Indonesia",
       "startDate": "2024-01-01",
       "endDate": "2024-12-31",
-      "summary": "Secondment from PLN via the Excellent Talent Program.",
-      "highlights": [
-        "Built Python and SQL ETL pipelines consolidating revenue and asset data from 65 state-owned enterprises and 1,000+ subsidiaries (USD 670B in assets) into a standardized reporting model.",
-        "Modeled commodity price, national stock, and harvest-forecast time series to quantify supply risk; the analysis informed a policy decision that secured a 6-month national strategic reserve."
-      ]
+      "summary": "Secondment from PLN via the Excellent Talent Program."
     },
     {
       "name": "PLN (Indonesian State Electricity Company)",
       "position": "Stakeholder Management Specialist",
       "location": "Jakarta, Indonesia",
       "startDate": "2021-01-01",
-      "endDate": "2025-08-31",
-      "highlights": [
-        "Designed structured data-sharing and reporting workflows across 81 institutions, cutting response time and eliminating data-handoff bottlenecks."
-      ]
+      "endDate": "2025-08-31"
     },
     {
       "name": "PLN (Indonesian State Electricity Company)",
       "position": "Senior Regulatory Affairs Specialist",
       "location": "Jakarta, Indonesia",
       "startDate": "2019-09-01",
-      "endDate": "2021-12-31",
-      "highlights": [
-        "Owned data-driven regulatory monitoring for transmission and generation assets, translating 30+ regulations and structured legal datasets into actionable compliance rules."
-      ]
+      "endDate": "2021-12-31"
     },
     {
       "name": "PLN Transmission & Substation Projects",
       "position": "Chairperson, Procurement Committee",
       "location": "Depok, Indonesia",
       "startDate": "2016-09-01",
-      "endDate": "2019-09-30",
-      "highlights": [
-        "Audited structured procurement datasets in Oracle ERP covering USD 300M+ in tenders and 200+ contractors, maintaining 100% data compliance across 100+ executed contracts.",
-        "Packages spanned the Java-Bali 500 kV backbone (Suralaya, Balaraja, Pedan, Kesugihan, Ujung Berung) and the Jakarta 500 kV loop."
-      ]
+      "endDate": "2019-09-30"
     },
     {
       "name": "PLN Transmission Construction",
       "position": "Project Site Coordinator",
       "location": "Tangerang Selatan, Indonesia",
       "startDate": "2013-05-01",
-      "endDate": "2016-09-30",
-      "highlights": [
-        "Supervised construction and energization of 30+ transmission and substation projects (USD 60M) with zero major safety incidents.",
-        "Reconciled multi-source field progress data across concurrent sites, securing on-time handover of 10 project sites."
-      ]
+      "endDate": "2016-09-30"
     },
     {
       "name": "PLN Transmission Engineering",
       "position": "System Validation Engineer",
       "location": "Semarang, Indonesia",
       "startDate": "2011-08-01",
-      "endDate": "2013-05-31",
-      "highlights": [
-        "Validated 1,000+ HV/EHV drawings and design calculations, resolving equipment interoperability issues before construction.",
-        "Authored a vendor-agnostic substation-automation data standard adopted for national implementation."
-      ]
+      "endDate": "2013-05-31"
     },
     {
       "name": "Rembang Coal-fired Power Plant",
       "position": "Commissioning Engineer",
       "location": "Rembang, Indonesia",
       "startDate": "2010-08-01",
-      "endDate": "2011-08-31",
-      "highlights": [
-        "Commissioned 2x300 MW coal-fired units through operational certification and synchronization to the Java-Bali grid.",
-        "Directed performance testing across 6 vendors on a USD 350M project."
-      ]
+      "endDate": "2011-08-31"
     }
   ],
   "volunteer": [],
