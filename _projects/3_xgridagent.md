@@ -2,6 +2,7 @@
 layout: page
 title: X-GridAgent + DistiLLM
 description: Distilling a multi-agent LLM system for power-grid analysis into a model small enough to run inside the utility.
+img: assets/img/projects/xgridagent_arch.jpg
 importance: 3
 category: machine learning
 ---
