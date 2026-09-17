@@ -6,7 +6,7 @@ subtitle: Data engineering for grid, energy, and scientific data. M.S. Data Scie
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>College Station, Texas</p>
