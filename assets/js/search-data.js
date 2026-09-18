@@ -96,7 +96,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/Wahyu_Hendro_Setyawan_Resume.pdf", "_blank");
+          window.open("/assets/pdf/Story_of_my_life.pdf", "_blank");
         },
       },{
         id: 'social-email',
