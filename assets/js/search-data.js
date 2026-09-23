@@ -81,6 +81,11 @@ ninja.data = [{
           description: "Distilling a multi-agent LLM system for power-grid analysis into a model small enough to run inside the utility.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_xgridagent/";
+            },},{id: "projects-rackiq",
+          title: 'RackIQ',
+          description: "A predictive hardware failure &amp; cited RCA recommendation copilot for data center operations. Prototype-phase finalist, ABB Accelerator 2026.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_rackiq/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
