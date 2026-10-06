@@ -86,7 +86,7 @@ ninja.data = [{
               window.location.href = "/projects/3_xgridagent/";
             },},{id: "projects-rackiq",
           title: 'RackIQ',
-          description: "A predictive hardware failure &amp; cited RCA copilot for data centers — 100-rack DCIM dashboard with spare-parts linkage. Prototype-phase finalist, ABB Accelerator 2026.",
+          description: "A data center management system with its own sensors — predictive hardware failure, a cited RCA copilot, live technician tracking and a 3D digital twin. Prototype-phase finalist, ABB Accelerator 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_rackiq/";
             },},{id: "teachings-data-science-fundamentals",
