@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RackIQ
-description: A predictive hardware failure & cited RCA copilot for data centers — 100-rack DCIM dashboard with spare-parts linkage. Prototype-phase finalist, ABB Accelerator 2026.
+description: A data center management system with its own sensors — predictive hardware failure, a cited RCA copilot, live technician tracking and a 3D digital twin. Prototype-phase finalist, ABB Accelerator 2026.
 img: assets/img/projects/rackiq_dashboard.jpg
 importance: 4
 category: machine learning
@@ -15,7 +15,13 @@ Hardware failures in a data center — DIMM errors, disk pre-failure, PSU faults
 
 ### What it does
 
-RackIQ predicts 72-hour failure risk for every monitored component from telemetry trends (explained with SHAP, plus an anomaly index for early warnings), recommends the fix that actually held in the organization's own 12-month incident history — cited, ranked by durable-fix rate, with failed fixes flagged — puts a safety step first when the rack is mid-migration or serving a DR failover, and shows whether the spare part is in stock.
+RackIQ is a data center management system in three parts:
+
+- **RackIQ Sense:** telemetry nodes on every rack, plus an edge gateway that reads server health.
+- **RackIQ Crew:** tracks each technician through their phone, a rugged tablet or a smart ID badge.
+- **The platform:** a subscription.
+
+The platform predicts 72-hour failure risk for every monitored component from telemetry trends (explained with SHAP, plus an anomaly index for early warnings), recommends the fix that actually held in the organization's own 12-month incident history — cited, ranked by durable-fix rate, with failed fixes flagged — puts a safety step first when the rack is mid-migration or serving a DR failover, and shows whether the spare part is in stock.
 
 <div class="row justify-content-sm-center mt-4">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -47,14 +53,45 @@ RackIQ predicts 72-hour failure risk for every monitored component from telemetr
   A DIMM at 100% predicted risk on a DR-failover rack: safety step first, the proven fix with its 12-month record and live stock, and the reseat flagged because it held only a third of the time.
 </div>
 
+### Live Floor 3D
+
+A live digital twin of the same hall and its spare-parts warehouse.
+
+- **Crew:** 4 technicians and 1 superintendent per 8-hour shift work RackIQ's ranked job queue. They scan the part out of its bin (the stock drops live), walk to the rack, then repair or swap the server. Shifts change every 8 hours with a handover.
+- **Tracking:** each person's tablet, phone or ID badge reports their zone, job and progress.
+- **Status:** every server shows healthy, warning, danger, down, under service, powered off or unoccupied. Every shelf shows part type, brand and stock status.
+- **Avatars:** adapted from the open-source [Claw3D](https://github.com/iamlukethedev/claw3d).
+
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/rackiq_live_floor.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/rackiq_live_crew.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Left: the live floor, crew walking between the racks and the warehouse. Right: following one technician carrying a part to a server swap, with the job tracked from their tablet.
+</div>
+
+### Business model
+
+Three revenue lines:
+
+- **Sense hardware:** $349 per rack node and $2,900 per gateway, sold once.
+- **Crew:** $19 per technician per month.
+- **Platform subscription:** $2–8 per server per month.
+
+For a 100-rack, 800-server hall, that is about $48K one-time plus $51K a year. That pays back in about 18 months on labor savings alone, before avoided downtime.
+
 ### Under the hood
 
-Five LightGBM failure models (DIMM, disk, PSU, NIC, fan) tracked in MLflow, hybrid BM25 + vector retrieval over ~1,900 knowledge-base documents, a fault knowledge graph (`Component → Symptom → Root Cause → Fix`), and a deterministic, cited recommendation agent — no free-form LLM generation, so no hallucinated advice. FastAPI backend; a five-section DCIM frontend (Command Center, Operations, Maintenance, Event Log, Inventory) built with React and D3.js.
+Five LightGBM failure models (DIMM, disk, PSU, NIC, fan) tracked in MLflow, hybrid BM25 + vector retrieval over ~1,900 knowledge-base documents, a fault knowledge graph (`Component → Symptom → Root Cause → Fix`), and a deterministic, cited recommendation agent — no free-form LLM generation, so no hallucinated advice. FastAPI backend; a six-section DCIM frontend (Command Center, Live Floor 3D, Operations, Maintenance, Event Log, Inventory) built with React, D3.js and three.js.
 
-Everything runs on clearly labelled synthetic data — 4,000 components, 90 days of MELT telemetry, 12 months of incidents and a simulated spare-parts warehouse — because the prototype phase has no access to a real data center's systems.
+Everything runs on clearly labelled synthetic data — 4,000 components, 90 days of MELT telemetry, 12 months of incidents, a simulated spare-parts warehouse and simulated crews — because the prototype phase has no access to a real data center's systems.
 
-- **Live demo:** [rackiq-copilot.web.app](https://rackiq-copilot.web.app) (static hosted snapshot)
+- **Live demo:** [rackiq-copilot.web.app](https://rackiq-copilot.web.app) (static hosted snapshot) · [Live Floor 3D](https://rackiq-copilot.web.app/live)
 - **Source code:** [github.com/hendrosetyawan/rackiq](https://github.com/hendrosetyawan/rackiq)
 - **Demo video:** [56-second walkthrough](https://github.com/hendrosetyawan/rackiq/blob/main/docs/media/rackiq_demo.mp4)
 
-*Python · FastAPI · LightGBM · SHAP · MLflow · BM25 · networkx · React · D3.js*
+*Python · FastAPI · LightGBM · SHAP · MLflow · BM25 · networkx · React · D3.js · three.js*
