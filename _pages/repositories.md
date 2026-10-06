@@ -20,6 +20,16 @@ nav_order: 4
   </div>
 
   <div class="repo-card">
+    <h4><a href="https://github.com/hendrosetyawan/rackiq">rackiq</a> <span class="repo-lang">JavaScript</span></h4>
+    <p>Predictive hardware failure and cited RCA copilot for data centers: 72-hour failure risk per component with SHAP explanations, fixes ranked by durable-fix rate from the incident history, and spare-parts linkage on a 100-rack DCIM dashboard. Prototype-phase finalist, ABB Accelerator 2026.</p>
+    <p class="repo-links">
+      <a href="https://github.com/hendrosetyawan/rackiq">Code</a> ·
+      <a href="https://rackiq-copilot.web.app">Live demo</a> ·
+      <a href="{{ '/projects/4_rackiq/' | relative_url }}">Write-up</a>
+    </p>
+  </div>
+
+  <div class="repo-card">
     <h4><a href="https://github.com/hendrosetyawan/hendrosetyawan.github.io">hendrosetyawan.github.io</a> <span class="repo-lang">HTML</span></h4>
     <p>This site. Jekyll, built on the al-folio theme and deployed to GitHub Pages.</p>
     <p class="repo-links">
@@ -29,7 +39,7 @@ nav_order: 4
 
   <div class="repo-card repo-card--muted">
     <h4>AutoScopy <span class="repo-lang">private</span></h4>
-    <p>M.S. Data Science capstone: 3D microstructure reconstruction from sparse measurements with calibrated uncertainty. Orientation library, HEDM/EBSD readers, and the HEDM↔EBSD baseline comparison.</p>
+    <p>3D reconstruction of FIB-SEM serial sections: slice alignment, sample finding and 3D grain segmentation, turning 268 images of a copper–tungsten film into 5,664 individual grains with a single-file WebGL viewer. Classical computer vision; runs on an 8 GB laptop or Google Colab.</p>
     <p class="repo-links"><a href="{{ '/projects/2_autoscopy/' | relative_url }}">Write-up</a></p>
   </div>
 

@@ -220,10 +220,11 @@
     {
       "name": "AutoScopy",
       "startDate": "2026-09-01",
-      "description": "Diffusion-model and implicit-neural-representation pipelines reconstructing 3D metal microstructures from sparse X-ray and electron diffraction data, targeting 10x fewer physical experiments. M.S. capstone.",
+      "description": "Classical computer-vision pipeline that aligns 268 FIB-SEM serial sections (slice-to-slice jitter 9.3 \u2192 0.4 px) and segments a copper\u2013tungsten film into 5,664 individual 3D grains; 5.4 min and 1.7 GB RAM on a laptop, also runs on Google Colab.",
       "highlights": [
-        "GPU-accelerated (CUDA) preprocessing",
-        "Uncertainty quantification feeding crystal-plasticity simulations"
+        "Edge + ORB/RANSAC shift estimates, two-stage rigid and AMST alignment",
+        "3D distance-transform watershed with the true anisotropic voxel size",
+        "Single-file WebGL2 viewer with three linked 3D views"
       ]
     },
     {
