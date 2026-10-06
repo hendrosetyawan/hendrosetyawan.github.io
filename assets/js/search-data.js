@@ -60,11 +60,14 @@ ninja.data = [{
             },},{id: "news-completed-x-gridagent-distilling-a-multi-agent-llm-system-into-a-local-1b-parameter-model-for-power-grid-analysis",
           title: 'Completed X-GridAgent, distilling a multi-agent LLM system into a local 1B-parameter model for...',
           description: "",
-          section: "News",},{id: "news-started-the-m-s-data-science-capstone-autoscopy-ai-enabled-3d-microstructure-reconstruction-from-sparse-measurements-with-calibrated-uncertainty-carried-through-to-fatigue-crack-prediction",
-          title: 'Started the M.S. Data Science capstone: AutoScopy, AI-enabled 3D microstructure reconstruction from sparse...',
+          section: "News",},{id: "news-started-autoscopy-3d-reconstruction-of-metal-microstructures-from-fib-sem-serial-sections",
+          title: 'Started AutoScopy: 3D reconstruction of metal microstructures from FIB-SEM serial sections.',
           description: "",
           section: "News",},{id: "news-team-demeter-took-3rd-place-at-the-2026-agtech-hackathon-at-texas-a-amp-amp-m-hosted-with-bayer-breedscope-a-genomic-selection-pipeline-over-1-07m-field-plots",
           title: 'Team Demeter took 3rd place at the 2026 AgTech Hackathon at Texas A&amp;amp;amp;M,...',
+          description: "",
+          section: "News",},{id: "news-autoscopy-milestone-268-fib-sem-slices-aligned-and-segmented-into-5-664-individual-3d-grains-with-a-single-file-interactive-3d-viewer-write-up",
+          title: 'AutoScopy milestone: 268 FIB-SEM slices aligned and segmented into 5,664 individual 3D grains,...',
           description: "",
           section: "News",},{id: "projects-breedscope",
           title: 'BreedScope',
@@ -73,7 +76,7 @@ ninja.data = [{
               window.location.href = "/projects/1_breedscope/";
             },},{id: "projects-autoscopy",
           title: 'AutoScopy',
-          description: "AI-enabled 3D microstructure reconstruction from sparse measurements, with calibrated uncertainty carried through to fatigue crack prediction.",
+          description: "Classical computer vision that aligns 268 FIB-SEM serial sections of a copper–tungsten film and segments it into 5,664 individual 3D grains.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_autoscopy/";
             },},{id: "projects-x-gridagent-distillm",
