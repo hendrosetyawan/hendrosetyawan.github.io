@@ -69,6 +69,9 @@ ninja.data = [{
           section: "News",},{id: "news-autoscopy-milestone-268-fib-sem-slices-aligned-and-segmented-into-5-664-individual-3d-grains-with-a-single-file-interactive-3d-viewer-write-up",
           title: 'AutoScopy milestone: 268 FIB-SEM slices aligned and segmented into 5,664 individual 3D grains,...',
           description: "",
+          section: "News",},{id: "news-storm-damage-risk-analytics-csce-679-team-8-proposal-v2-is-out-it-covers-recurring-vs-catastrophic-storm-damage-across-texas-counties-six-design-requirements-and-what-commercial-insurance-tools-leave-out-see-the-write-up-and-the-interactive-mock-up",
+          title: 'Storm Damage Risk Analytics (CSCE 679, Team 8): proposal v2 is out. It...',
+          description: "",
           section: "News",},{id: "projects-breedscope",
           title: 'BreedScope',
           description: "A genomic-selection pipeline that ranks 15,968 untested maize lines under a cut plot budget. 3rd place, 2026 AgTech Hackathon.",
@@ -89,6 +92,11 @@ ninja.data = [{
           description: "A data center management system with its own sensors — predictive hardware failure, a cited RCA copilot, live technician tracking and a 3D digital twin. Prototype-phase finalist, ABB Accelerator 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_rackiq/";
+            },},{id: "projects-storm-damage-risk-analytics",
+          title: 'Storm Damage Risk Analytics',
+          description: "Visual analytics that separates recurring from catastrophic severe-weather damage across Texas counties, for insurance analysts. CSCE 679 Data Visualization, Team 8.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_stormdamage/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
