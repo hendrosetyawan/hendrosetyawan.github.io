@@ -5,7 +5,7 @@ permalink: /projects/
 description: Pipelines, models, and the occasional dashboard.
 nav: true
 nav_order: 3
-display_categories: [data engineering, machine learning]
+display_categories: [data engineering, machine learning, data visualization]
 horizontal: false
 ---
 
