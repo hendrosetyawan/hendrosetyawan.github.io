@@ -72,6 +72,9 @@ ninja.data = [{
           section: "News",},{id: "news-storm-damage-risk-analytics-csce-679-team-8-proposal-v2-is-out-it-covers-recurring-vs-catastrophic-storm-damage-across-texas-counties-six-design-requirements-and-what-commercial-insurance-tools-leave-out-see-the-write-up-and-the-interactive-mock-up",
           title: 'Storm Damage Risk Analytics (CSCE 679, Team 8): proposal v2 is out. It...',
           description: "",
+          section: "News",},{id: "news-moneyball-mls-is-live-a-machine-learning-scouting-board-for-all-30-major-league-soccer-clubs-with-exact-player-ratings-for-this-season-and-the-next-three-comparable-players-and-contract-value-see-the-write-up-and-the-app",
+          title: 'Moneyball MLS is live: a machine-learning scouting board for all 30 Major League...',
+          description: "",
           section: "News",},{id: "projects-breedscope",
           title: 'BreedScope',
           description: "A genomic-selection pipeline that ranks 15,968 untested maize lines under a cut plot budget. 3rd place, 2026 AgTech Hackathon.",
@@ -97,6 +100,11 @@ ninja.data = [{
           description: "Visual analytics that separates recurring from catastrophic severe-weather damage across Texas counties, for insurance analysts. CSCE 679 Data Visualization, Team 8.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_stormdamage/";
+            },},{id: "projects-moneyball-mls",
+          title: 'Moneyball MLS',
+          description: "A machine-learning scouting board for all 30 Major League Soccer clubs. Each player gets a role, a skill shape, comparable players, ratings for this season and the next three, and a contract-value tag.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_moneyball_mls/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
