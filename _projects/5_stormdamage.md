@@ -7,7 +7,7 @@ importance: 5
 category: data visualization
 ---
 
-**CSCE 679 Data Visualization (Texas A&M), Team 8:** Aadi Mahajan, Abhinav Sheshadri, MD Imtiaz Mahi and me. Proposal stage, October 2026.
+**CSCE 679 Data Visualization (Texas A&M), Team 8:** Aadi Mahajan, Abhinav Sheshadri, MD Imtiaz Mahi and me. Proposal stage, October 2026, with two working prototypes.
 
 ### The problem
 
@@ -65,8 +65,23 @@ We will check these gaps in user interviews. Our system is meant to complement t
 
 Data: NOAA Storm Events (2006–2025), Texas Department of Insurance homeowners losses by county (2019–2025) as an insured-loss reference, and Census ACS housing data for development context. Seven semi-structured interviews with underwriters, a catastrophe analyst, a regulator, homeowners and faculty are planned before the prototype; no findings are reported yet.
 
+### A second prototype: StormLens
+
+Alongside the Texas county mock-up, the team built **StormLens**, a 3D map of the whole United States. It covers 308,762 NOAA hail, thunderstorm-wind and tornado events from 2015 to 2025. Each map cell is a hexagonal column, about 15 km across. Its height is event count, significant events or NOAA-reported damage, and it is split into segments by peril, so the cap colour shows the dominant peril and the sides show the full mix.
+
+The views are linked: a state ranking (total or per 100k residents), peril composition as share of events against share of damage, a year filter with playback, and the most damaging events with their National Weather Service narratives. The two prototypes answer different questions. InsurViz joins the storm record to Census housing and Texas Department of Insurance data; StormLens stays with the storm record and asks where, which peril and when.
+
+<div class="row justify-content-sm-center mt-4">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/stormlens_map.jpg" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  StormLens, all events 2015–2025, column height = event count. Blue is hail, orange thunderstorm wind, purple tornado. It shows how often NOAA's damage field is filled (76%) and how many wind gusts were measured rather than estimated (16%).
+</div>
+
 - **Proposal page:** [insurviz.web.app/proposal](https://insurviz.web.app/proposal/)
-- **Interactive mock-up:** [insurviz.web.app](https://insurviz.web.app) (preliminary work, to be revised toward R1–R6)
-- **Source code:** [github.com/hendrosetyawan/insurviz](https://github.com/hendrosetyawan/insurviz)
+- **Interactive mock-up (Texas counties):** [insurviz.web.app](https://insurviz.web.app) (preliminary work, to be revised toward R1–R6) · [source](https://github.com/hendrosetyawan/insurviz)
+- **National 3D map:** [stormlens.web.app](https://stormlens.web.app) · [source](https://github.com/hendrosetyawan/stormlens)
 
 *Python · pandas · matplotlib · D3.js · three.js · Firebase Hosting*

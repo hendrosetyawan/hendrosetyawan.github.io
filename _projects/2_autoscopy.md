@@ -7,7 +7,7 @@ importance: 2
 category: machine learning
 ---
 
-**Ongoing since September 2026.** Alignment and 3D grain segmentation work end to end. Next is a second dataset.
+**Ongoing since September 2026.** Alignment and 3D grain segmentation work end to end, in a notebook and as a DREAM3D-NX pipeline. Next is a second dataset.
 
 ### The problem
 
@@ -24,7 +24,7 @@ on an 8 GB laptop.
 
 ### The pipeline
 
-Twelve steps in one notebook, streaming one slice at a time from disk:
+Twelve steps in one notebook, plus an optional export for DREAM3D-NX, streaming one slice at a time from disk:
 
 - **Alignment.** Two independent shift estimates per slice pair: Sobel edges with phase correlation, and ORB
   features with RANSAC. They are combined, the summed path is split into a slow trend and a fast jitter, and each
@@ -76,12 +76,18 @@ what a film that looks the same in every in-plane direction should give. Grain s
   Left: grain size for the 5,034 grains not cut by the edge of the data. Right: each grain's extent along X against its extent along the slicing direction; the cloud sits on the diagonal.
 </div>
 
+### The same grains in DREAM3D-NX
+
+DREAM3D is the tool materials scientists already use for microstructure, so the same workflow also exists there, as a 42-filter DREAM3D-NX 7.4.2 pipeline: alignment, film only, per-slice brightness normalisation, two phases, a distance-transform watershed in each phase, removal of grains below 0.06 µm, measurements and export. It runs end to end on the same 268 slices and finds **5,554 grains** in 98 seconds with 1.8 GB of memory, within 2% of the notebook's 5,664.
+
+DREAM3D-NX cannot measure slice shifts on grayscale SEM images or follow the film's top surface, so the pipeline reads both from two small files that the notebook exports: the per-slice shifts and the film masks.
+
 ### What a grain means here
 
 A grain is a region of one phase, separated from its neighbours by the other phase or by a narrow neck. Two touching
 grains of the same phase and the same brightness stay one grain: the images alone cannot separate crystals that only
 differ in orientation. That needs EBSD, or a boundary-based method on images with orientation contrast, which is
 also what a single-phase material would need. Both are next, together with a second dataset to show the pipeline is
-not tuned to this one film.
+not tuned to this one film. A comparison with the 2022 Avizo segmentation of the same sample is also planned.
 
-*Python · NumPy · SciPy · scikit-image · tifffile · WebGL2 · Google Colab*
+*Python · NumPy · SciPy · scikit-image · tifffile · WebGL2 · DREAM3D-NX · Google Colab*
