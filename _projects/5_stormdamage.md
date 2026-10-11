@@ -65,7 +65,7 @@ We will check these gaps in user interviews. Our system is meant to complement t
 
 Data: NOAA Storm Events (2006–2025), Texas Department of Insurance homeowners losses by county (2019–2025) as an insured-loss reference, and Census ACS housing data for development context. Seven semi-structured interviews with underwriters, a catastrophe analyst, a regulator, homeowners and faculty are planned before the prototype; no findings are reported yet.
 
-- **Proposal page:** [insurviz.web.app/proposal](https://insurviz.web.app/proposal/) · [report (PDF)](https://insurviz.web.app/proposal/Team8_Proposal_v2.pdf) · [slides (PDF)](https://insurviz.web.app/proposal/Team8_Proposal_Slides_v6.pdf)
+- **Proposal page:** [insurviz.web.app/proposal](https://insurviz.web.app/proposal/)
 - **Interactive mock-up:** [insurviz.web.app](https://insurviz.web.app) (preliminary work, to be revised toward R1–R6)
 - **Source code:** [github.com/hendrosetyawan/insurviz](https://github.com/hendrosetyawan/insurviz)
 
