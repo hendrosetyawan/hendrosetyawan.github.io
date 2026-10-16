@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-10-11
+date: 2026-10-16
 inline: true
 related_posts: false
 ---
 
-**StormLens** joins the Team 8 storm-damage project: a 3D map of 308,762 NOAA hail, wind and tornado events across the United States, 2015–2025. See the [write-up](/projects/5_stormdamage/) and the [app](https://stormlens.web.app). **AutoScopy** now also runs as a DREAM3D-NX pipeline that finds 5,554 grains on the same slices.
+New write-up of my **CSCE 679 tutorials**: Hans Rosling's *200 years in 4 minutes* rebuilt as a linked Tableau dashboard, and D3.js basics on Observable. See the [project page](/projects/7_csce679_tutorials/) and the [live dashboard](https://public.tableau.com/app/profile/hendro.setyawab/viz/HansRosling200Yearsin4Minutes-HendroSetyawan/Dashboard1).
