@@ -75,8 +75,8 @@ ninja.data = [{
           section: "News",},{id: "news-moneyball-mls-is-live-a-machine-learning-scouting-board-for-all-30-major-league-soccer-clubs-with-exact-player-ratings-for-this-season-and-the-next-three-comparable-players-and-contract-value-see-the-write-up-and-the-app",
           title: 'Moneyball MLS is live: a machine-learning scouting board for all 30 Major League...',
           description: "",
-          section: "News",},{id: "news-stormlens-joins-the-team-8-storm-damage-project-a-3d-map-of-308-762-noaa-hail-wind-and-tornado-events-across-the-united-states-2015-2025-see-the-write-up-and-the-app-autoscopy-now-also-runs-as-a-dream3d-nx-pipeline-that-finds-5-554-grains-on-the-same-slices",
-          title: 'StormLens joins the Team 8 storm-damage project: a 3D map of 308,762 NOAA...',
+          section: "News",},{id: "news-new-write-up-of-my-csce-679-tutorials-hans-rosling-s-200-years-in-4-minutes-rebuilt-as-a-linked-tableau-dashboard-and-d3-js-basics-on-observable-see-the-project-page-and-the-live-dashboard",
+          title: 'New write-up of my CSCE 679 tutorials: Hans Rosling’s 200 years in 4...',
           description: "",
           section: "News",},{id: "projects-breedscope",
           title: 'BreedScope',
@@ -108,6 +108,11 @@ ninja.data = [{
           description: "A machine-learning scouting board for all 30 Major League Soccer clubs. Each player gets a role, a skill shape, comparable players, ratings for this season and the next three, and a contract-value tag.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_moneyball_mls/";
+            },},{id: "projects-csce-679-tutorials",
+          title: 'CSCE 679 Tutorials',
+          description: "Hans Rosling&#39;s 200 years in 4 minutes rebuilt in Tableau as a linked dashboard, and D3.js basics on Observable ending with a scatter plot of 801 Pokémon.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_csce679_tutorials/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
