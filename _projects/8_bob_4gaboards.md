@@ -3,7 +3,7 @@ layout: project
 title: Bob Fixes the Board
 description: Using IBM Bob to explore 4ga Boards, an open-source kanban app I had never seen, and fix a real bug with tests.
 importance: 8
-category: software engineering
+category: visualization and software
 status: Personal project · October 2026
 frontend: React and Redux-Saga client; six Jest tests.
 stack: [IBM Bob, React, Redux-Saga, Jest, Sails.js, PostgreSQL]

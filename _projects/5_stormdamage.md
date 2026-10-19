@@ -4,7 +4,7 @@ title: Storm Damage Risk Analytics
 description: Visual analytics that separates recurring from catastrophic severe-weather damage across Texas counties, for insurance analysts. CSCE 679 Data Visualization, Team 8.
 img: assets/img/projects/stormdamage_card.jpg
 importance: 5
-category: data visualization
+category: visualization and software
 status: Proposal stage · October 2026 · two working prototypes
 python_role: Builds the county-year and national hexagon tables from raw NOAA, Census and Texas Department of Insurance files.
 frontend: D3.js and three.js 3D maps with linked views.

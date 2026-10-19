@@ -3,8 +3,8 @@ layout: project
 title: X-GridAgent + DistiLLM
 description: Distilling a multi-agent LLM system for power-grid analysis into a model small enough to run inside the utility.
 img: assets/img/projects/xgridagent_talk.jpg
-importance: 3
-category: machine learning
+importance: 5
+category: data and machine learning
 status: Complete · Texas A&M, January–May 2026
 python_role: Distillation training and evaluation of the 1B-parameter model.
 stack: [Python, PyTorch, MCP, RAG, SQL]

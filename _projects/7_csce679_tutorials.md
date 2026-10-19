@@ -4,7 +4,7 @@ title: CSCE 679 Tutorials
 description: Hans Rosling's 200 years in 4 minutes rebuilt in Tableau as a linked dashboard, and D3.js basics on Observable ending with a scatter plot of 801 Pokémon.
 img: assets/img/projects/csce679_card.jpg
 importance: 7
-category: data visualization
+category: visualization and software
 status: Coursework · CSCE 679, Fall 2026
 frontend: Tableau Public workbook and D3.js notebooks on Observable.
 stack: [Tableau, D3.js, Observable, JavaScript]

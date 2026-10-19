@@ -4,7 +4,7 @@ title: BreedScope
 description: A genomic-selection pipeline that ranks 15,968 untested maize lines under a cut plot budget. 3rd place, 2026 AgTech Hackathon.
 img: assets/img/projects/breedscope_demeter.jpg
 importance: 1
-category: data engineering
+category: data and machine learning
 status: Complete · 3rd place, AgTech Hackathon 2026
 python_role: 'All nine pipeline stages: ID reconciliation, RR-BLUP breeding values, GxE modelling, REML variance estimation and the plot-cut plans.'
 frontend: Interactive dashboard (D3.js, Next.js) on Firebase Hosting.
