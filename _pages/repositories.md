@@ -2,83 +2,67 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Public code. Some of the work lives in private repositories — happy to walk through it on request.
+description: The code behind the projects. Python carries the data and models; JavaScript is the interactive front end on top.
 nav: true
 nav_order: 4
 ---
 
-<div class="repo-list">
+{% assign items = site.data.portfolio %}
 
-  <div class="repo-card">
-    <h4><a href="https://github.com/hendrosetyawan/breedscope">breedscope</a> <span class="repo-lang">Python</span></h4>
-    <p>Genomic selection pipeline and interactive dashboard ranking 15,968 untested maize lines under a cut plot budget. Nine stages over 1,072,276 field plots, RR-BLUP from 2,911 SNP markers, forward-year validation only. 3rd place, AgHack 2026, Corn Breeding Track.</p>
-    <p class="repo-links">
-      <a href="https://github.com/hendrosetyawan/breedscope">Code</a> ·
-      <a href="https://demeter-aggie-bayer.web.app">Live dashboard</a> ·
-      <a href="{{ '/projects/1_breedscope/' | relative_url }}">Write-up</a>
-    </p>
+<div class="stack-panel">
+  <div class="stack-row">
+    <span class="stack-k">Python</span>
+    <span class="stack-v">
+      <span class="chip chip--py">pandas</span>
+      <span class="chip chip--py">NumPy</span>
+      <span class="chip chip--py">SciPy</span>
+      <span class="chip chip--py">scikit-learn</span>
+      <span class="chip chip--py">LightGBM</span>
+      <span class="chip chip--py">PyTorch</span>
+      <span class="chip chip--py">scikit-image</span>
+      <span class="chip chip--py">FastAPI</span>
+      <span class="chip chip--py">pytest</span>
+    </span>
   </div>
-
-  <div class="repo-card">
-    <h4><a href="https://github.com/hendrosetyawan/rackiq">rackiq</a> <span class="repo-lang">JavaScript</span></h4>
-    <p>Predictive hardware failure and cited RCA copilot for data centers: 72-hour failure risk per component with SHAP explanations, fixes ranked by durable-fix rate from the incident history, and spare-parts linkage on a 100-rack DCIM dashboard. Prototype-phase finalist, ABB Accelerator 2026.</p>
-    <p class="repo-links">
-      <a href="https://github.com/hendrosetyawan/rackiq">Code</a> ·
-      <a href="https://rackiq-copilot.web.app">Live demo</a> ·
-      <a href="{{ '/projects/4_rackiq/' | relative_url }}">Write-up</a>
-    </p>
+  <div class="stack-row">
+    <span class="stack-k">Front ends</span>
+    <span class="stack-v">
+      <span class="chip">D3.js</span>
+      <span class="chip">three.js</span>
+      <span class="chip">React</span>
+      <span class="chip">Tableau</span>
+    </span>
   </div>
-
-  <div class="repo-card">
-    <h4><a href="https://github.com/hendrosetyawan/moneyball_MLS">moneyball_MLS</a> <span class="repo-lang">JavaScript</span></h4>
-    <p>Machine-learning scouting board for all 30 Major League Soccer clubs. Each of 637 players gets a role, a skill shape, comparable players, exact 0–100 ratings for this season and the next three, and a contract-value tag. Ridge projections beat both baselines at every horizon.</p>
-    <p class="repo-links">
-      <a href="https://github.com/hendrosetyawan/moneyball_MLS">Code</a> ·
-      <a href="https://moneyball-mls.web.app">Live app</a> ·
-      <a href="{{ '/projects/6_moneyball_mls/' | relative_url }}">Write-up</a>
-    </p>
-  </div>
-
-  <div class="repo-card">
-    <h4><a href="https://github.com/hendrosetyawan/insurviz">insurviz</a> <span class="repo-lang">JavaScript</span></h4>
-    <p>3D visual analytics for all 254 Texas counties, joining NOAA severe-weather history, Census housing exposure and Texas Department of Insurance homeowners data. Also hosts the Team 8 proposal for recurring vs. catastrophic storm damage. CSCE 679.</p>
-    <p class="repo-links">
-      <a href="https://github.com/hendrosetyawan/insurviz">Code</a> ·
-      <a href="https://insurviz.web.app">Live app</a> ·
-      <a href="{{ '/projects/5_stormdamage/' | relative_url }}">Write-up</a>
-    </p>
-  </div>
-
-  <div class="repo-card">
-    <h4><a href="https://github.com/hendrosetyawan/stormlens">stormlens</a> <span class="repo-lang">JavaScript</span></h4>
-    <p>3D map of 308,762 NOAA hail, thunderstorm-wind and tornado events across the United States, 2015–2025, as peril-segmented hexagon columns linked to a state ranking, a timeline and the most damaging events. CSCE 679, Team 8.</p>
-    <p class="repo-links">
-      <a href="https://github.com/hendrosetyawan/stormlens">Code</a> ·
-      <a href="https://stormlens.web.app">Live app</a> ·
-      <a href="{{ '/projects/5_stormdamage/' | relative_url }}">Write-up</a>
-    </p>
-  </div>
-
-  <div class="repo-card">
-    <h4><a href="https://github.com/hendrosetyawan/hendrosetyawan.github.io">hendrosetyawan.github.io</a> <span class="repo-lang">HTML</span></h4>
-    <p>This site. Jekyll, built on the al-folio theme and deployed to GitHub Pages.</p>
-    <p class="repo-links">
-      <a href="https://github.com/hendrosetyawan/hendrosetyawan.github.io">Code</a>
-    </p>
-  </div>
-
-  <div class="repo-card repo-card--muted">
-    <h4>AutoScopy <span class="repo-lang">private</span></h4>
-    <p>3D reconstruction of FIB-SEM serial sections: slice alignment, sample finding and 3D grain segmentation, turning 268 images of a copper–tungsten film into 5,664 individual grains with a single-file WebGL viewer, and the same workflow as a DREAM3D-NX pipeline. Classical computer vision; runs on an 8 GB laptop or Google Colab.</p>
-    <p class="repo-links"><a href="{{ '/projects/2_autoscopy/' | relative_url }}">Write-up</a></p>
-  </div>
-
-  <div class="repo-card repo-card--muted">
-    <h4>X-GridAgent <span class="repo-lang">private</span></h4>
-    <p>On-policy distillation of a multi-agent LLM system for power-grid analysis into a locally served 1B-parameter model.</p>
-    <p class="repo-links"><a href="{{ '/projects/3_xgridagent/' | relative_url }}">Write-up</a></p>
-  </div>
-
+  <p class="stack-note">
+    GitHub's language bar counts bytes, so the JavaScript, CSS and HTML bundled with each dashboard outweighs the Python in several repositories.
+    The Python is where the data work happens: cleaning, joining, modelling and exporting the tables the dashboards read.
+    Each card below says what the Python does.
+  </p>
 </div>
 
-<p class="mt-4">Everything public lives at <a href="https://github.com/hendrosetyawan">github.com/hendrosetyawan</a>.</p>
+{% assign groups = "python|Python pipelines and models,viz|Visualization and open source,site|This site" | split: "," %}
+{% for g in groups %}
+{% assign gparts = g | split: "|" %}
+{% assign gitems = items | where: "group", gparts[0] %}
+<h3 class="repo-group">{{ gparts[1] }}</h3>
+<div class="repo-list">
+  {% for p in gitems %}
+  <div class="repo-card{% unless p.repo or p.group == 'site' %} repo-card--private{% endunless %}" id="{{ p.id }}">
+    <h4>
+      {% if p.repo %}<a href="https://github.com/hendrosetyawan/{{ p.repo }}{% if p.repo_branch %}/tree/{{ p.repo_branch }}{% endif %}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+      {% unless p.repo %}<span class="repo-tag">private</span>{% endunless %}
+    </h4>
+    <div class="chips">
+      {% for t in p.stack %}<span class="chip{% if t == 'Python' %} chip--py{% endif %}">{{ t }}</span>{% endfor %}
+    </div>
+    <p>{{ p.summary }}</p>
+    {% if p.python %}<p class="repo-detail"><strong>Python:</strong> {{ p.python }}</p>{% endif %}
+    {% if p.frontend %}<p class="repo-detail"><strong>Front end:</strong> {{ p.frontend }}</p>{% endif %}
+    {% capture links %}{% if p.repo %}<a href="https://github.com/hendrosetyawan/{{ p.repo }}{% if p.repo_branch %}/tree/{{ p.repo_branch }}{% endif %}">Code</a>|{% endif %}{% if p.demo %}<a href="{{ p.demo.url }}">{{ p.demo.label }}</a>|{% endif %}{% if p.project %}<a href="{{ p.project | relative_url }}">Write-up</a>|{% endif %}{% unless p.repo %}<span class="repo-note">code walkthrough on request</span>|{% endunless %}{% endcapture %}
+    <p class="repo-links">{{ links | split: "|" | join: " · " }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+
+<p class="mt-4">Everything public lives at <a href="https://github.com/hendrosetyawan">github.com/hendrosetyawan</a>. AutoScopy and X-GridAgent are private; happy to walk through either on request.</p>

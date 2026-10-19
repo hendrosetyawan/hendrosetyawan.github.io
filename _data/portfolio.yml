@@ -1,0 +1,114 @@
+# Single source for the /repositories/ page and the "At a glance" panel on each project page.
+# `project` must match the project page URL so the two sides link to each other.
+# `group`: python (data/ML pipelines), viz (visualization and open-source work), site.
+# Python is always listed first in `stack`.
+
+- id: breedscope
+  title: BreedScope
+  repo: breedscope
+  group: python
+  project: /projects/1_breedscope/
+  demo: { label: Live dashboard, url: "https://demeter-aggie-bayer.web.app" }
+  stack: [Python, pandas, NumPy, SciPy, scikit-learn, matplotlib]
+  summary: Genomic selection pipeline and interactive dashboard ranking 15,968 untested maize lines under a cut plot budget. Nine stages over 1,072,276 field plots, RR-BLUP from 2,911 SNP markers, forward-year validation only. 3rd place, AgHack 2026, Corn Breeding Track.
+  python: All nine pipeline stages, from ID reconciliation to the GxE models and REML selection planning.
+  frontend: Interactive dashboard (D3.js, Next.js) on Firebase Hosting.
+
+- id: rackiq
+  title: RackIQ
+  repo: rackiq
+  group: python
+  project: /projects/4_rackiq/
+  demo: { label: Live demo, url: "https://rackiq-copilot.web.app" }
+  stack: [Python, FastAPI, scikit-learn, pandas, NumPy, pytest]
+  summary: "Predictive hardware failure and cited RCA copilot for data centers: 72-hour failure risk per component with SHAP explanations, fixes ranked by durable-fix rate from the incident history, and spare-parts linkage on a 100-rack DCIM dashboard. Prototype-phase finalist, ABB Accelerator 2026."
+  python: The failure-risk models, the retrieval and recommendation agent, the synthetic telemetry generators and the FastAPI backend, with a pytest suite.
+  frontend: React, D3.js and three.js dashboard and 3D floor view.
+
+- id: moneyball_MLS
+  title: Moneyball MLS
+  repo: moneyball_MLS
+  group: python
+  project: /projects/6_moneyball_mls/
+  demo: { label: Live app, url: "https://moneyball-mls.web.app" }
+  stack: [Python, pandas, scikit-learn, LightGBM, SciPy, NumPy]
+  summary: Machine-learning scouting board for all 30 Major League Soccer clubs. Each of 637 players gets a role, a skill shape, comparable players, exact 0–100 ratings for this season and the next three, and a contract-value tag. Ridge projections beat both baselines at every horizon.
+  python: The data pull and build, one ridge projection per horizon, a LightGBM contract-value model, and the export the web app reads.
+  frontend: D3.js scouting board on Firebase Hosting.
+
+- id: insurviz
+  title: InsurViz
+  repo: insurviz
+  group: python
+  project: /projects/5_stormdamage/
+  demo: { label: Live app, url: "https://insurviz.web.app" }
+  stack: [Python, pandas, NumPy, D3.js, three.js]
+  summary: 3D visual analytics for all 254 Texas counties, joining NOAA severe-weather history, Census housing exposure and Texas Department of Insurance homeowners data. Also hosts the Team 8 proposal for recurring vs. catastrophic storm damage. CSCE 679.
+  python: Scripts that join the NOAA, Census and TDI files into county-year tables.
+  frontend: D3.js and three.js 3D county map.
+
+- id: stormlens
+  title: StormLens
+  repo: stormlens
+  group: python
+  project: /projects/5_stormdamage/
+  demo: { label: Live app, url: "https://stormlens.web.app" }
+  stack: [Python, pandas, NumPy, D3.js, three.js]
+  summary: 3D map of 308,762 NOAA hail, thunderstorm-wind and tornado events across the United States, 2015–2025, as peril-segmented hexagon columns linked to a state ranking, a timeline and the most damaging events. CSCE 679, Team 8.
+  python: The build script that turns raw NOAA storm events into the hexagon, state and timeline tables.
+  frontend: three.js hexagon-column map with linked D3.js views.
+
+- id: autoscopy
+  title: AutoScopy
+  repo: null
+  group: python
+  project: /projects/2_autoscopy/
+  stack: [Python, NumPy, SciPy, scikit-image, tifffile, DREAM3D-NX]
+  summary: 3D reconstruction of FIB-SEM serial sections. Slice alignment, sample finding and 3D grain segmentation turn 268 images of a copper–tungsten film into 5,664 individual grains, with a single-file WebGL viewer and the same workflow as a DREAM3D-NX pipeline. Classical computer vision; runs on an 8 GB laptop or Google Colab.
+  python: Alignment, sample finding, grain segmentation and the export that feeds DREAM3D-NX.
+  frontend: Single-file WebGL2 viewer.
+
+- id: x-gridagent
+  title: X-GridAgent + DistiLLM
+  repo: null
+  group: python
+  project: /projects/3_xgridagent/
+  stack: [Python, PyTorch, SQL]
+  summary: On-policy distillation of a multi-agent LLM system for power-grid analysis into a locally served 1B-parameter model.
+  python: Distillation training and evaluation of the 1B-parameter model.
+
+- id: csce679-tutorials
+  title: CSCE 679 tutorials
+  repo: csce679-tutorials
+  group: viz
+  project: /projects/7_csce679_tutorials/
+  stack: [Tableau, D3.js, Observable]
+  summary: Hans Rosling's Gapminder dashboard rebuilt in Tableau, and D3.js basics on Observable ending with a scatter plot of 801 Pokémon.
+  frontend: Tableau Public workbook and D3.js notebooks.
+
+- id: csce679-assignment1
+  title: CSCE 679 Assignment 1
+  repo: CSCE-679-Data-Visualization-Assignment1
+  group: viz
+  project: /projects/7_csce679_tutorials/
+  demo: { label: Live demo, url: "https://hendrosetyawan.github.io/CSCE-679-Data-Visualization-Assignment1/" }
+  stack: [D3.js, JavaScript]
+  summary: Hong Kong temperature heatmaps in D3.js, Level 1 and Level 2.
+  frontend: D3.js heatmaps.
+
+- id: 4gaboards
+  title: 4ga Boards fix
+  repo: 4gaBoards
+  repo_branch: ibm-bob-project
+  group: viz
+  project: /projects/8_bob_4gaboards/
+  stack: [IBM Bob, React, Redux-Saga, Jest]
+  summary: My fork of the open-source 4ga Boards kanban app. It holds the IBM Bob session records and the fix for issue #279, where deleting the list behind an open card replaced the board with "Card Not Found". Submitted upstream as RARgames/4gaBoards#1113.
+  frontend: React and Redux-Saga client; six Jest tests.
+
+- id: site
+  title: hendrosetyawan.github.io
+  repo: hendrosetyawan.github.io
+  group: site
+  stack: [Jekyll, al-folio, GitHub Pages]
+  summary: This site. Jekyll, built on the al-folio theme and deployed to GitHub Pages.

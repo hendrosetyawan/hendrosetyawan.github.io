@@ -1,10 +1,14 @@
 ---
-layout: page
+layout: project
 title: BreedScope
 description: A genomic-selection pipeline that ranks 15,968 untested maize lines under a cut plot budget. 3rd place, 2026 AgTech Hackathon.
 img: assets/img/projects/breedscope_demeter.jpg
 importance: 1
 category: data engineering
+status: Complete · 3rd place, AgTech Hackathon 2026
+python_role: 'All nine pipeline stages: ID reconciliation, RR-BLUP breeding values, GxE modelling, REML variance estimation and the plot-cut plans.'
+frontend: Interactive dashboard (D3.js, Next.js) on Firebase Hosting.
+stack: [Python, pandas, NumPy, scikit-learn, D3.js, Firebase]
 ---
 
 **3rd place, 2026 AgTech Hackathon** (Precision Digital Agriculture, Corn Breeding Track) at Texas A&M, hosted with Bayer, the Texas A&M Institute of Data Science, and Texas A&M AgriLife Research. Built over one weekend by Team Demeter, five members.

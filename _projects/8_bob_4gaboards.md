@@ -1,9 +1,12 @@
 ---
-layout: page
+layout: project
 title: Bob Fixes the Board
 description: Using IBM Bob to explore 4ga Boards, an open-source kanban app I had never seen, and fix a real bug with tests.
 importance: 8
 category: software engineering
+status: Personal project · October 2026
+frontend: React and Redux-Saga client; six Jest tests.
+stack: [IBM Bob, React, Redux-Saga, Jest, Sails.js, PostgreSQL]
 ---
 
 A personal project to learn **IBM Bob**, IBM's AI coding assistant. I started it for AngelHack × IBM's _Building with IBM Bob_ (October 2026) but missed the submission deadline, so I finished it for fun. The idea follows the event's student theme: start with an unfamiliar application, use Bob to understand it, and fix a real issue.

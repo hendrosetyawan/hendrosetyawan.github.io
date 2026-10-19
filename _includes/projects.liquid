@@ -12,8 +12,14 @@
         %}
       {% endif %}
       <div class="card-body">
+        {% if project.status %}<p class="card-status">{{ project.status }}</p>{% endif %}
         <h2 class="card-title">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>
+        {% if project.stack %}
+        <div class="card-chips">
+          {% for t in project.stack limit: 5 %}<span class="chip{% if t == 'Python' %} chip--py{% endif %}">{{ t }}</span>{% endfor %}
+        </div>
+        {% endif %}
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}
             <div class="github-icon">

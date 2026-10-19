@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Data engineering for grid, energy, and scientific data. M.S. Data Science, Texas A&M.
+subtitle: Python data engineering and machine learning for grid, energy, and scientific data. M.S. Data Science, Texas A&M.
 
 profile:
   align: right
@@ -26,13 +26,23 @@ latest_posts:
   limit: 3
 ---
 
-I build the data pipelines behind physical infrastructure.
+I build the Python data pipelines and models behind physical infrastructure.
 
 For fifteen years at **PLN**, Indonesia's national electric utility, the data *was* the job: Python and SQL ETL over a decade of billing records, structured reporting workflows across 81 institutions, and regulatory data governance that turned 30+ regulations into enforceable compliance rules. On secondment to the **Ministry of State-Owned Enterprises**, I consolidated revenue and asset data from 65 state-owned enterprises and more than 1,000 subsidiaries — USD 670B in assets — into a single standardized reporting model. The time-series work that came out of it informed a policy decision that secured a six-month national strategic reserve.
 
 Before that I spent nine years building the grid itself: 39 transmission, substation, and generation projects, including nodes of the Java–Bali 500 kV backbone and twelve gas-insulated substations threaded through dense urban Jakarta, where overhead lines were not an option.
 
-I am now completing an **M.S. in Data Science at Texas A&M**, graduating December 2026. Recent work includes [BreedScope](/projects/), a genomic-selection pipeline that ranked 15,968 untested maize lines across 1.07M field plots and took 3rd place at the 2026 AgTech Hackathon with Bayer; an on-policy distillation of a multi-agent LLM system for power-grid analysis; and [AutoScopy](/projects/2_autoscopy/), which aligns 268 FIB-SEM serial sections of a copper–tungsten film and segments it into 5,664 individual 3D grains.
+I am now completing an **M.S. in Data Science at Texas A&M**, graduating December 2026. The work since then is below.
+
+**Toolkit.** Python first: pandas, NumPy, SciPy, scikit-learn, LightGBM, PyTorch and FastAPI, with SQL on the warehouse side. I reach for D3.js and three.js only when a result needs to be explored visually. [Every repository](/repositories/) says what its Python does.
+
+**Selected work**
+
+- [BreedScope](/projects/1_breedscope/): nine-stage genomic-selection pipeline that ranked 15,968 untested maize lines across 1.07M field plots, 3rd place at the 2026 AgTech Hackathon with Bayer.
+- [RackIQ](/projects/4_rackiq/): failure-risk models and a cited RCA copilot for data-center hardware, ABB Accelerator 2026 finalist.
+- [Moneyball MLS](/projects/6_moneyball_mls/): ridge and LightGBM scouting models for all 30 MLS clubs.
+- [AutoScopy](/projects/2_autoscopy/): NumPy and SciPy reconstruction of 5,664 3D grains from 268 FIB-SEM images.
+- [X-GridAgent + DistiLLM](/projects/3_xgridagent/): distilling a multi-agent LLM system for power-grid analysis into a 1B-parameter model that runs inside the utility.
 
 Most data candidates have the stack but not the domain. Most utility engineers have the domain but not the stack. I have both, at national scale.
 

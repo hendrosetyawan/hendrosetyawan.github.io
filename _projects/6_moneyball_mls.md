@@ -1,10 +1,14 @@
 ---
-layout: page
+layout: project
 title: Moneyball MLS
 description: A machine-learning scouting board for all 30 Major League Soccer clubs. Each player gets a role, a skill shape, comparable players, ratings for this season and the next three, and a contract-value tag.
 img: assets/img/projects/moneyball_mls_card.jpg
 importance: 6
 category: machine learning
+status: Live app · 2026 season data
+python_role: The data pull and build, one ridge projection per horizon, a LightGBM contract-value model and the export the web app reads.
+frontend: D3.js scouting board on Firebase Hosting.
+stack: [Python, pandas, scikit-learn, LightGBM, D3.js, Firebase]
 ---
 
 A scouting board built for soccer scouts rather than analysts. Every MLS player with at least 300 minutes in 2026 (637 players across 30 clubs, including San Diego FC) gets the following, on one card and one profile:

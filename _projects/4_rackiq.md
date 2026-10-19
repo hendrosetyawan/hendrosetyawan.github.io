@@ -1,10 +1,14 @@
 ---
-layout: page
+layout: project
 title: RackIQ
 description: A data center management system with its own sensors — predictive hardware failure, a cited RCA copilot, live technician tracking and a 3D digital twin. Prototype-phase finalist, ABB Accelerator 2026.
 img: assets/img/projects/rackiq_dashboard.jpg
 importance: 4
 category: machine learning
+status: Prototype-phase finalist · ABB Accelerator 2026
+python_role: The 72-hour failure-risk models with SHAP explanations, the cited RCA retrieval and recommendation agent, and the FastAPI backend.
+frontend: React, D3.js and three.js dashboard and 3D floor view.
+stack: [Python, FastAPI, LightGBM, SHAP, MLflow, React, D3.js, three.js]
 ---
 
 **Prototype-phase finalist, ABB Accelerator 2026** (hybrid of the Agentic Predictive Maintenance Studio and Multimodal Maintenance Intelligence Agent themes). Team RackIQ: Tasmaiya Tamboli and me.

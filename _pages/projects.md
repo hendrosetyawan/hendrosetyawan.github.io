@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Pipelines, models, and the occasional dashboard.
+description: Python pipelines and models for grid, energy and scientific data, with interactive dashboards on top. Each project links to its code.
 nav: true
 nav_order: 3
 display_categories: [data engineering, machine learning, data visualization, software engineering]

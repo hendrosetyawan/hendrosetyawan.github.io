@@ -1,0 +1,26 @@
+{% assign linked = site.data.portfolio | where: "project", page.url %}
+<aside class="glance">
+  {% if page.status %}
+  <div class="glance-row"><span class="glance-k">Status</span><span class="glance-v">{{ page.status }}</span></div>
+  {% endif %}
+  {% if page.python_role %}
+  <div class="glance-row"><span class="glance-k">Python does</span><span class="glance-v">{{ page.python_role }}</span></div>
+  {% endif %}
+  {% if page.frontend %}
+  <div class="glance-row"><span class="glance-k">Front end</span><span class="glance-v">{{ page.frontend }}</span></div>
+  {% endif %}
+  {% if page.stack %}
+  <div class="glance-row">
+    <span class="glance-k">Stack</span>
+    <span class="glance-v">{% for t in page.stack %}<span class="chip{% if t == 'Python' %} chip--py{% endif %}">{{ t }}</span>{% endfor %}</span>
+  </div>
+  {% endif %}
+  <div class="glance-row">
+    <span class="glance-k">Code</span>
+    <span class="glance-v">
+      {% capture links %}{% for p in linked %}{% if p.repo %}<a href="https://github.com/hendrosetyawan/{{ p.repo }}{% if p.repo_branch %}/tree/{{ p.repo_branch }}{% endif %}">{{ p.repo }}</a>{% if p.demo %} (<a href="{{ p.demo.url }}">{{ p.demo.label | downcase }}</a>){% endif %}|{% elsif p.demo %}<a href="{{ p.demo.url }}">{{ p.demo.label }}</a>|{% endif %}{% endfor %}{% endcapture %}
+      {% assign anchors = linked | map: "id" %}
+      {% if links != "" %}{{ links | split: "|" | join: " · " }} · {% else %}Private repository · {% endif %}<a href="{{ '/repositories/' | relative_url }}#{{ anchors | first }}">repository card</a>
+    </span>
+  </div>
+</aside>

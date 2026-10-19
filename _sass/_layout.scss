@@ -57,7 +57,163 @@ body.sticky-bottom-footer {
 
 // TODO: redefine projects layout.
 
-// Repositories page: static cards, no third-party image services.
+// Chips: tools and libraries. Python is the one accent colour on the site.
+.chip {
+  display: inline-block;
+  font-size: 0.72rem;
+  line-height: 1;
+  padding: 0.28rem 0.55rem;
+  margin: 0 0.3rem 0.3rem 0;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.chip--py {
+  background: #3776ab;
+  border-color: #3776ab;
+  color: #fff;
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .chip--py {
+  background: #ffd43b;
+  border-color: #ffd43b;
+  color: #1f2328;
+}
+
+.chips {
+  margin-bottom: 0.45rem;
+}
+
+// Project pages: "At a glance" panel under the title.
+.glance {
+  border: 1px solid var(--global-divider-color);
+  border-left: 4px solid #3776ab;
+  border-radius: 8px;
+  padding: 0.85rem 1.1rem;
+  margin: 0 0 1.75rem;
+  background: var(--global-card-bg-color);
+}
+
+html[data-theme="dark"] .glance {
+  border-left-color: #ffd43b;
+}
+
+.glance-row {
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem 0;
+  font-size: 0.92rem;
+}
+
+.glance-k {
+  flex: 0 0 7rem;
+  padding-top: 0.15rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--global-text-color-light);
+}
+
+.glance-v {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 575px) {
+  .glance-row {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .glance-k {
+    flex-basis: auto;
+  }
+}
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.9rem;
+}
+
+// Projects page: uniform thumbnails and a tool row on every card.
+.projects .card-img-top {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.projects .card-title {
+  font-size: 1.25rem;
+}
+
+.projects .card-text {
+  font-size: 0.9rem;
+}
+
+.projects .card-status {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--global-text-color-light);
+}
+
+.projects .card-chips {
+  margin-top: 0.5rem;
+}
+
+// Repositories page.
+.stack-panel {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.stack-row {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.stack-k {
+  flex: 0 0 6rem;
+  padding-top: 0.2rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--global-text-color-light);
+}
+
+.stack-v {
+  flex: 1;
+}
+
+.stack-note {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 575px) {
+  .stack-row {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
+.repo-group {
+  margin: 2rem 0 0.8rem;
+  font-size: 1.15rem;
+}
+
 .repo-list {
   display: grid;
   gap: 1rem;
@@ -71,38 +227,58 @@ body.sticky-bottom-footer {
 }
 
 .repo-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--global-divider-color);
   border-radius: 8px;
   padding: 1rem 1.15rem;
+  transition: border-color 0.15s ease;
+  scroll-margin-top: 5rem;
+}
+
+.repo-card:hover,
+.repo-card:target {
+  border-color: var(--global-theme-color);
 }
 
 .repo-card h4 {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.5rem;
   font-size: 1.05rem;
 }
 
 .repo-card p {
   margin-bottom: 0.5rem;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 
-.repo-card .repo-lang {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+.repo-card .repo-detail {
+  font-size: 0.85rem;
   color: var(--global-text-color-light);
+}
+
+.repo-card .repo-tag {
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.5rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 999px;
-  padding: 0.1rem 0.5rem;
-  margin-left: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
   vertical-align: middle;
 }
 
 .repo-card .repo-links {
+  margin: auto 0 0;
+  padding-top: 0.4rem;
   font-size: 0.85rem;
-  margin-bottom: 0;
 }
 
-.repo-card--muted {
-  opacity: 0.8;
+.repo-card .repo-note {
+  color: var(--global-text-color-light);
+}
+
+.repo-card--private {
+  border-style: dashed;
 }

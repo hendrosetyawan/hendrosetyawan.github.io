@@ -1,10 +1,14 @@
 ---
-layout: page
+layout: project
 title: AutoScopy
 description: Classical computer vision that aligns 268 FIB-SEM serial sections of a copper–tungsten film and segments it into 5,664 individual 3D grains.
 img: assets/img/projects/autoscopy_grains.jpg
 importance: 2
 category: machine learning
+status: Ongoing since September 2026
+python_role: Slice alignment, sample finding and 3D grain segmentation, plus the export that feeds the DREAM3D-NX pipeline.
+frontend: Single-file WebGL2 viewer.
+stack: [Python, NumPy, SciPy, scikit-image, tifffile, DREAM3D-NX, WebGL2]
 ---
 
 **Ongoing since September 2026.** Alignment and 3D grain segmentation work end to end, in a notebook and as a DREAM3D-NX pipeline. Next is a second dataset.
