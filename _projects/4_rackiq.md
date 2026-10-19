@@ -82,11 +82,11 @@ A live digital twin of the same hall and its spare-parts warehouse.
 
 Three revenue lines:
 
-- **Sense hardware:** $349 per rack node and $2,900 per gateway, sold once.
-- **Crew:** $19 per technician per month.
-- **Platform subscription:** $2–8 per server per month.
+- **Sense hardware:** &#36;349 per rack node and &#36;2,900 per gateway, sold once.
+- **Crew:** &#36;19 per technician per month.
+- **Platform subscription:** &#36;2–8 per server per month.
 
-For a 100-rack, 800-server hall, that is about $48K one-time plus $51K a year. That pays back in about 18 months on labor savings alone, before avoided downtime.
+For a 100-rack, 800-server hall, that is about &#36;48K one-time plus &#36;51K a year. That pays back in about 18 months on labor savings alone, before avoided downtime.
 
 ### Under the hood
 

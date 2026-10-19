@@ -19,10 +19,10 @@ Insurance underwriters and risk analysts need to understand why historical sever
 
 Our preliminary analysis of NOAA Storm Events covers 25,867 Texas hail, thunderstorm-wind and tornado reports from 2015 to 2025. Damage is grouped by county storm day, because NOAA often splits one storm into many reports.
 
-- **Same total, different risk:** Tarrant ($1.44B) and Bexar ($1.37B) have almost the same reported damage. Tarrant's came from three storms of over $350M in two different years. 99% of Bexar's came from one hailstorm on 12 April 2016.
-- **One day dominates:** in 48 of the 57 counties with at least $5M of damage, one storm day caused at least half of it.
+- **Same total, different risk:** Tarrant (&#36;1.44B) and Bexar (&#36;1.37B) have almost the same reported damage. Tarrant's came from three storms of over &#36;350M in two different years. 99% of Bexar's came from one hailstorm on 12 April 2016.
+- **One day dominates:** in 48 of the 57 counties with at least &#36;5M of damage, one storm day caused at least half of it.
 - **Frequency is not damage:** tornadoes were 6% of reports but 23% of damage; thunderstorm wind was 40% of reports but 4% of damage.
-- **The record is thin:** 15% of reports leave damage blank and 64% report $0, and NOAA damage is an estimate, not insured loss.
+- **The record is thin:** 15% of reports leave damage blank and 64% report &#36;0, and NOAA damage is an estimate, not insured loss.
 
 <div class="row justify-content-sm-center mt-4">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -43,7 +43,7 @@ Our preliminary analysis of NOAA Storm Events covers 25,867 Texas hail, thunders
   </div>
 </div>
 <div class="caption">
-  Left: share of each county's damage from its single worst storm day. Right: that share across the 57 counties with at least $5M of damage, and each hazard's share of reports and of damage.
+  Left: share of each county's damage from its single worst storm day. Right: that share across the 57 counties with at least &#36;5M of damage, and each hazard's share of reports and of damage.
 </div>
 
 ### What today's insurance tools leave out
