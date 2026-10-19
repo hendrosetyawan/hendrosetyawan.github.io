@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "Pipelines, models, and the occasional dashboard.",
+          description: "Python pipelines and models for grid, energy and scientific data, with interactive dashboards on top. Each project links to its code.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Public code. Some of the work lives in private repositories — happy to walk through it on request.",
+          description: "The code behind the projects. Python carries the data and models; JavaScript is the interactive front end on top.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
