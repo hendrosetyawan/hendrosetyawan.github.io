@@ -78,6 +78,9 @@ ninja.data = [{
           section: "News",},{id: "news-new-write-up-of-my-csce-679-tutorials-hans-rosling-s-200-years-in-4-minutes-rebuilt-as-a-linked-tableau-dashboard-and-d3-js-basics-on-observable-see-the-project-page-and-the-live-dashboard",
           title: 'New write-up of my CSCE 679 tutorials: Hans Rosling’s 200 years in 4...',
           description: "",
+          section: "News",},{id: "news-new-project-bob-fixes-the-board-i-used-ibm-bob-ibm-s-ai-coding-assistant-to-explore-4ga-boards-an-open-source-kanban-app-i-had-never-seen-and-fix-a-real-bug-with-tests-see-the-project-page",
+          title: 'New project: Bob Fixes the Board. I used IBM Bob, IBM’s AI coding...',
+          description: "",
           section: "News",},{id: "projects-breedscope",
           title: 'BreedScope',
           description: "A genomic-selection pipeline that ranks 15,968 untested maize lines under a cut plot budget. 3rd place, 2026 AgTech Hackathon.",
@@ -113,6 +116,11 @@ ninja.data = [{
           description: "Hans Rosling&#39;s 200 years in 4 minutes rebuilt in Tableau as a linked dashboard, and D3.js basics on Observable ending with a scatter plot of 801 Pokémon.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_csce679_tutorials/";
+            },},{id: "projects-bob-fixes-the-board",
+          title: 'Bob Fixes the Board',
+          description: "Using IBM Bob to explore 4ga Boards, an open-source kanban app I had never seen, and fix a real bug with tests.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_bob_4gaboards/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
