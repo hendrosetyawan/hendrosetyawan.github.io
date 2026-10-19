@@ -21,6 +21,7 @@ Issue [#279](https://github.com/RARgames/4gaBoards/issues/279) (duplicate [#159]
 - **Fix:** before a list is removed, Bob's change looks up the open card with `selectCardById` and calls `goToBoard` if the card is in that list. This covers your own delete and the real-time socket event when someone else deletes the list. One file, 21 lines added.
 - **Tests:** Bob wrote six Jest tests and fixed its own test-setup and lint errors until all six passed with zero lint warnings.
 - **Review and commit:** Bob reviewed both files against the project's rules, then committed and pushed them.
+- **Pull request:** I opened the fix upstream as [RARgames/4gaBoards#1113](https://github.com/RARgames/4gaBoards/pull/1113), linked to close both issues once it is merged.
 
 The fix run took Bob 47 tool calls in about three minutes. The whole project used about 6 Bobcoins.
 
@@ -29,6 +30,7 @@ The fix run took Bob 47 tool calls in about three minutes. The whole project use
 - **Tests:** 6 of 6 pass with the fix; all 6 fail without it.
 - **In the app:** deleting the list of an open card now returns to the board, both in the same tab and when the list is deleted from another tab.
 
+- **Upstream pull request:** [RARgames/4gaBoards#1113](https://github.com/RARgames/4gaBoards/pull/1113)
 - **Project write-up and Bob session records:** [hendrosetyawan/4gaBoards, branch ibm-bob-project](https://github.com/hendrosetyawan/4gaBoards/tree/ibm-bob-project)
 - **The fix:** [commit 44736daa](https://github.com/hendrosetyawan/4gaBoards/commit/44736daab096e861c755edfa925e0e586d98b1a3)
 
